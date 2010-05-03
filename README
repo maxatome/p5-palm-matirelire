@@ -18,8 +18,6 @@ Palm::MaTirelire::Types
 Palm::BlockPack
 Palm::FieldPack
 
-To be done XXX...
-
 See directory tools for examples of use.
 
 INSTALLATION
@@ -36,14 +34,11 @@ INSTALLATION
 
 3. You have to install the perl Palm module.
 
-   Palm-1.3.0 - http://search.cpan.org/~arensb/p5-Palm-1.3.0/
+   http://search.cpan.org/dist/p5-Palm/
 
    If you want to use the M1->M2 converter or the M2 import/export
-   scripts, you have to install the latest development version of this
-   module:
-
-   Palm-1.4.0-snapshot
-   - http://www.coldsync.org/download/p5-Palm-1.4.0-snapshot.tar.gz
+   scripts, you have to install at least the 1.006 version of this
+   module.
 
 4. To install Ma Tirelire modules type the following:
 
