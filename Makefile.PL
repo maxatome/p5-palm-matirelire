@@ -2,11 +2,10 @@ use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
-    NAME              => 'Palm::MaTirelire',
-    VERSION	      => '1.9',
-    DISTNAME	      => 'p5-Palm-MaTirelire',
-    PREREQ_PM         => { 'Palm::PDB' => '1.3.0' },
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT	      => 'Superclass handler for Palm MaTirelire databases',
-       AUTHOR         => 'Maxime Soulé <max@ma-tirelire.net>') : ()),
+    NAME           => 'Palm::MaTirelire',
+    VERSION	   => '1.9',
+    DISTNAME	   => 'p5-Palm-MaTirelire',
+    PREREQ_PM      => { 'Palm::PDB' => '1.29' },
+    ABSTRACT	   => 'Superclass handler for Palm MaTirelire databases',
+    AUTHOR         => 'Maxime Soulé <max@ma-tirelire.net>',
 );
