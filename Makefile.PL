@@ -4,7 +4,6 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME           => 'Palm::MaTirelire',
     VERSION	   => '1.10',
-    DISTNAME	   => 'p5-Palm-MaTirelire',
     PREREQ_PM      => { 'Palm::PDB' => '1.29' },
     ABSTRACT	   => 'Superclass handler for Palm MaTirelire databases',
     AUTHOR         => 'Maxime Soulé <max@ma-tirelire.net>',
