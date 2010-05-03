@@ -4,15 +4,13 @@
 # Author          : Maxime Soule
 # Created On      : Wed Dec 29 11:22:47 2004
 # Last Modified By: Maxime Soule
-# Last Modified On: Tue Jun 13 10:06:27 2006
-# Update Count    : 28
+# Last Modified On: Mon May  3 15:03:08 2010
+# Update Count    : 30
 # Status          : Unknown, Use with caution!
 # 
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: BlockPack.pm,v 1.3 2006/06/13 08:17:46 max Exp $
 #
 
 package Palm::BlockPack;
@@ -22,9 +20,10 @@ use strict;
 use Carp qw(carp);
 use Palm::FieldPack;
 
-use vars qw($VERBOSE);
+our $VERBOSE = 1;
 
-$VERBOSE = 1;
+our $VERSION = '1.0';
+
 
 my %SPECIAL_TYPES = (UInt8    => [ \&pack_fields_to_UInt8,
 				   \&unpack_UInt8_to_fields ],

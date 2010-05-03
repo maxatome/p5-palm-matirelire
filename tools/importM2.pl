@@ -5,15 +5,13 @@
 # Author          : Maxime Soule
 # Created On      : Tue Jun 21 22:44:23 2005
 # Last Modified By: Maxime Soule
-# Last Modified On: Wed Dec 12 14:45:24 2007
-# Update Count    : 71
+# Last Modified On: Mon May  3 15:10:16 2010
+# Update Count    : 72
 # Status          : Unknown, Use with caution!
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: importM2.pl,v 1.9 2007/02/06 10:15:41 max Exp $
 #
 
 # 

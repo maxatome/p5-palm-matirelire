@@ -2,24 +2,20 @@
 # Author          : Maxime Soulé
 # Created On      : Sun Aug 29 21:56:26 2004
 # Last Modified By: Maxime Soule
-# Last Modified On: Thu Jun 15 11:54:10 2006
-# Update Count    : 3
+# Last Modified On: Mon May  3 15:01:11 2010
+# Update Count    : 5
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
 #
-# $Id: MaTirelire.pm,v 1.6 2006/06/16 10:34:00 max Exp $
-#
 
 package Palm::MaTirelire;
 use Palm::Raw();
 
-use vars qw(@ISA $VERSION);
+use base qw(Palm::Raw);
 
-@ISA = qw(Palm::Raw);
-
-$VERSION = '1.6';
+our $VERSION = '1.6';
 
 sub new
 {

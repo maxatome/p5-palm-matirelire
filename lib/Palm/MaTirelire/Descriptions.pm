@@ -1,15 +1,13 @@
 #
 # Author          : Maxime Soulé
 # Created On      : Sun Aug 29 21:40:59 2004
-# Last Modified By: 
-# Last Modified On: 
-# Update Count    : 0
+# Last Modified By: Maxime Soule
+# Last Modified On: Mon May  3 14:55:52 2010
+# Update Count    : 2
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: Descriptions.pm,v 1.2 2005/06/15 20:27:56 max Exp $
 #
 
 package Palm::MaTirelire::Descriptions;
@@ -20,9 +18,9 @@ use Palm::BlockPack;
 
 use Palm::MaTirelire::DBItem;
 
-use vars qw(@ISA);
+use base qw(Palm::MaTirelire::DBItem);
 
-@ISA = qw(Palm::MaTirelire::DBItem);
+our $VERSION = '1.0';
 
 
 # Each record

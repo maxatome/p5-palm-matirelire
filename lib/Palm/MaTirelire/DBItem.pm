@@ -1,15 +1,13 @@
 #
 # Author          : Maxime Soulé
 # Created On      : Thu Dec 30 00:26:56 2004
-# Last Modified By: 
-# Last Modified On: 
-# Update Count    : 0
+# Last Modified By: Maxime Soule
+# Last Modified On: Mon May  3 14:56:33 2010
+# Update Count    : 1
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: DBItem.pm,v 1.2 2005/06/15 20:27:56 max Exp $
 #
 
 package Palm::MaTirelire::DBItem;
@@ -20,9 +18,9 @@ use Palm::BlockPack;
 
 use Palm::MaTirelire;
 
-use vars qw(@ISA);
+use base qw(Palm::MaTirelire);
 
-@ISA = qw(Palm::MaTirelire);
+our $VERSION = '1.0';
 
 
 sub meta_infos ($)

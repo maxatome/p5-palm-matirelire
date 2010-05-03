@@ -5,15 +5,13 @@
 # Author          : Maxime Soule
 # Created On      : Fri Jun  9 10:02:14 2006
 # Last Modified By: Maxime Soule
-# Last Modified On: Mon Aug  7 11:22:49 2006
-# Update Count    : 14
+# Last Modified On: Mon May  3 15:10:26 2010
+# Update Count    : 15
 # Status          : Unknown, Use with caution!
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: matidump.pl,v 1.4 2006/10/05 19:09:13 max Exp $
 #
 
 use strict;

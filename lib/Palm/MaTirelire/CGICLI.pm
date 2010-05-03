@@ -2,19 +2,19 @@
 # Author          : Maxime Soule
 # Created On      : Fri Jun 16 10:01:55 2006
 # Last Modified By: Maxime Soule
-# Last Modified On: Fri Jun 16 11:40:11 2006
-# Update Count    : 17
+# Last Modified On: Mon May  3 14:57:10 2010
+# Update Count    : 18
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
 #
-# $Id: CGICLI.pm,v 1.1 2006/06/16 10:29:34 max Exp $
-#
 
 package Palm::MaTirelire::CGICLI;
 
 use strict;
+
+our $VERSION = '1.0';
 
 our $AUTOLOAD;
 

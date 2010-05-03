@@ -2,30 +2,28 @@
 # Author          : Maxime Soulé
 # Created On      : Sun Aug 29 23:17:21 2004
 # Last Modified By: Maxime Soule
-# Last Modified On: Wed Dec 29 16:41:17 2004
-# Update Count    : 3
+# Last Modified On: Mon May  3 15:02:20 2010
+# Update Count    : 4
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: FieldPack.pm,v 1.2 2005/06/15 20:27:56 max Exp $
 #
 
 package Palm::FieldPack;
 
 use Exporter;
 
-use vars qw(@ISA);
+use base qw(Exporter);
 
-@ISA = qw(Exporter);
+our @EXPORT = qw(pack_fields_to_UInt8 unpack_UInt8_to_fields
+		 pack_fields_to_UInt16 unpack_UInt16_to_fields
+		 pack_fields_to_UInt32 unpack_UInt32_to_fields
+		 pack_DateType unpack_DateType
+		 pack_TimeType unpack_TimeType
+		 pack_double unpack_double);
 
-@EXPORT = qw(pack_fields_to_UInt8 unpack_UInt8_to_fields
-	     pack_fields_to_UInt16 unpack_UInt16_to_fields
-	     pack_fields_to_UInt32 unpack_UInt32_to_fields
-	     pack_DateType unpack_DateType
-	     pack_TimeType unpack_TimeType
-	     pack_double unpack_double);
+our $VERSION = '1.0';
 
 
 my $big_endian;

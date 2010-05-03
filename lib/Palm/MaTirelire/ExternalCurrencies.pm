@@ -2,14 +2,12 @@
 # Author          : Maxime Soule
 # Created On      : Wed Jun  2 11:41:30 2004
 # Last Modified By: Maxime Soule
-# Last Modified On: Wed Jun  2 12:18:59 2004
-# Update Count    : 15
+# Last Modified On: Mon May  3 14:55:16 2010
+# Update Count    : 17
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: ExternalCurrencies.pm,v 1.2 2005/06/15 20:27:56 max Exp $
 #
 
 package Palm::MaTirelire::ExternalCurrencies;
@@ -20,9 +18,9 @@ use Palm::BlockPack;
 
 use Palm::MaTirelire::DBItem;
 
-use vars qw(@ISA);
+use base qw(Palm::MaTirelire::DBItem);
 
-@ISA = qw(Palm::MaTirelire::DBItem);
+our $VERSION = '1.0';
 
 
 # Each record

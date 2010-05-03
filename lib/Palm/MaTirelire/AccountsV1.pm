@@ -1,15 +1,13 @@
 #
 # Author          : Maxime Soulé
 # Created On      : Mon Aug 30 00:36:38 2004
-# Last Modified By: 
-# Last Modified On: 
-# Update Count    : 0
+# Last Modified By: Maxime Soule
+# Last Modified On: Mon May  3 15:00:42 2010
+# Update Count    : 2
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.
-#
-# $Id: AccountsV1.pm,v 1.4 2005/06/15 20:27:56 max Exp $
 #
 
 package Palm::MaTirelire::AccountsV1;
@@ -21,9 +19,9 @@ use Palm::BlockPack;
 use Palm::MaTirelire;
 use Palm::StdAppInfo();
 
-use vars qw(@ISA);
+use base qw(Palm::MaTirelire Palm::StdAppInfo);
 
-@ISA = qw(Palm::MaTirelire Palm::StdAppInfo);
+our $VERSION = '1.0';
 
 
 use constant UNKNOWN_MODE	=> ((1 << 5) - 1);
