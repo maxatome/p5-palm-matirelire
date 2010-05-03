@@ -22,4 +22,3 @@ tools/exportM2.pl
 tools/importM2.pl
 tools/M1toM2.pl
 tools/matidump.pl
-META.yml                                 Module meta-data (added by MakeMaker)
