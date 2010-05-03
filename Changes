@@ -1,0 +1,6 @@
+Revision history for Perl extension Palm::MaTirelire.
+
+0.01  Sun Jan 30 13:43:41 2005
+	- original version; created by h2xs 1.23 with options
+		-AX -n Palm::MaTirelire
+
