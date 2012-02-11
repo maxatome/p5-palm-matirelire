@@ -1,9 +1,9 @@
 #
 # Author          : Maxime Soulé
 # Created On      : Sun Aug 29 21:40:59 2004
-# Last Modified By: Maxime Soule
-# Last Modified On: Mon May  3 14:53:53 2010
-# Update Count    : 20
+# Last Modified By: Maximum Solo
+# Last Modified On: Sat Feb 11 22:37:16 2012
+# Update Count    : 22
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
@@ -349,18 +349,13 @@ sub dump
 	    $depth_glyphs .= $rec->{brother_id} == 0xff ? '  ' : '| ';
 	    $depth++;
 
-	  load_and_continue:
-	    $rec = $ref_cache->[$id];
-	    next;
+	    goto load_and_continue;
 	}
 
 	# Else type has a brother
       brother:
 	$id = $rec->{brother_id};
-	if ($id != 0xff)
-	{
-	    goto load_and_continue;
-	}
+	goto load_and_continue if $id != 0xff;
 
 	# Else, if the type has a parent => go to his brother OR his parent
 	$id = $rec->{parent_id};
@@ -376,6 +371,9 @@ sub dump
 
 	# Else that's all folk...
 	last;
+
+      load_and_continue:
+	$rec = $ref_cache->[$id];
     }
 
     if (@types != @{$self->{records}})
