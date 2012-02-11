@@ -3,8 +3,8 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME           => 'Palm::MaTirelire',
-    VERSION	   => '1.10',
-    PREREQ_PM      => { 'Palm::PDB' => '1.29' },
+    VERSION	   => '1.11',
+    PREREQ_PM      => { 'Palm::PDB' => '1.012' },
     ABSTRACT	   => 'Superclass handler for Palm MaTirelire databases',
     AUTHOR         => 'Maxime Soulé <max@ma-tirelire.net>',
 );
