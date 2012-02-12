@@ -4,9 +4,9 @@
 # 
 # Author          : Maxime Soulé
 # Created On      : Thu May 26 22:05:17 2005
-# Last Modified By: Maxime Soule
-# Last Modified On: Mon May  3 15:10:04 2010
-# Update Count    : 41
+# Last Modified By: Maximum Solo
+# Last Modified On: Sun Feb 12 09:48:02 2012
+# Update Count    : 42
 # Status          : Unknown, Use with caution!
 #
 # Copyright (C) 2005, Maxime Soulé
@@ -1028,12 +1028,7 @@ if ($query->param('export_types'))
 
 	# Type has a child
 	$id = $rec->{child_id};
-	if ($id != 0xff)
-	{
-	  load_and_continue:
-	    $rec = $ref_cache->[$id];
-	    next;
-	}
+	goto load_and_continue if $id != 0xff;
 
 	# Else type has a brother
       brother:
@@ -1053,6 +1048,9 @@ if ($query->param('export_types'))
 
 	# Else that's all folk...
 	last;
+
+      load_and_continue:
+	$rec = $ref_cache->[$id];
     }
 
     if ($REC_INDEX != @{$types_db->{records}})
