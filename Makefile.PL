@@ -5,7 +5,10 @@ use utf8;
 WriteMakefile(
     NAME           => 'Palm::MaTirelire',
     VERSION	   => '1.12',
-    PREREQ_PM      => { 'Palm::PDB' => '1.012' },
+    PREREQ_PM      => {
+	'Palm::PDB'	   => '1.015',
+	'Palm::StdAppInfo' => '1.014',
+    },
     ABSTRACT	   => 'Superclass handler for Palm MaTirelire databases',
     AUTHOR         => 'Maxime Soulé <max@ma-tirelire.net>',
 );
