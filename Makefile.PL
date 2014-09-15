@@ -4,7 +4,7 @@ use utf8;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME           => 'Palm::MaTirelire',
-    VERSION	   => '1.13',
+    VERSION	   => '1.14',
     PREREQ_PM      => {
 	'Palm::PDB'	   => '1.015',
 	'Palm::StdAppInfo' => '1.014',

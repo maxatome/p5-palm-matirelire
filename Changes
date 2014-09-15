@@ -1,5 +1,8 @@
 Revision history for Perl extension Palm::MaTirelire.
 
+1.14  Mon Sep 15 21:22:33 UTC 2014
+        - set the version correctly...
+
 1.13  Mon Sep 15 21:19:45 UTC 2014
         - add Palm::StdAppInfo to prereqs
 
