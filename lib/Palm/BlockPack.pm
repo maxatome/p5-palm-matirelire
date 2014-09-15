@@ -1,13 +1,8 @@
-# 
-# BlockPack.pm -- 
-# 
-# Author          : Maxime Soule
-# Created On      : Wed Dec 29 11:22:47 2004
-# Last Modified By: Maxime Soule
-# Last Modified On: Mon May  3 15:03:08 2010
-# Update Count    : 30
-# Status          : Unknown, Use with caution!
-# 
+=encoding iso-8859-1
+
+=cut
+
+#
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
 # License, as specified in the README file.

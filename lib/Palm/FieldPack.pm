@@ -1,9 +1,7 @@
-#
-# Author          : Maxime Soulé
-# Created On      : Sun Aug 29 23:17:21 2004
-# Last Modified By: Maxime Soule
-# Last Modified On: Mon May  3 15:02:20 2010
-# Update Count    : 4
+=encoding iso-8859-1
+
+=cut
+
 #
 # Copyright (C) 2005, Maxime Soulé
 # You may distribute this file under the terms of the Artistic
