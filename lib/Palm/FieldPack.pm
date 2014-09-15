@@ -31,7 +31,7 @@ BEGIN
     {
 	die "Can't manage double values in this database, abort.\n";
     }
-    
+
     if (pack('I', 0x12345678) eq pack('N', 0x12345678))
     {
 	$big_endian = 1;
@@ -127,7 +127,7 @@ sub __pack_fields
 	    }
 	}
 	else
-	{ 
+	{
 	    $val = 0;
 	}
 
@@ -237,7 +237,7 @@ sub pack_DateType
 	$ref_hash->{"${prefix}year"} -= 1904;
     }
 
-    my $pack = pack_fields_to_UInt16($ref_hash, 
+    my $pack = pack_fields_to_UInt16($ref_hash,
 				     "${prefix}year:7",
 				     "${prefix}month:4",
 				     "${prefix}day:5");
@@ -262,7 +262,7 @@ sub unpack_DateType
     my $prefix = @_ == 3 ? pop : '';
     my @result;
 
-    @result = unpack_UInt16_to_fields(@_, 
+    @result = unpack_UInt16_to_fields(@_,
 				      "${prefix}year:7",
 				      "${prefix}month:4",
 				      "${prefix}day:5");
@@ -312,7 +312,7 @@ sub unpack_TimeType
     if (ref($ref_hash) eq 'HASH')
     {
 	($packed_value, $prefix) = @_;
-	
+
 	$prefix = '' unless defined $prefix;
     }
     else

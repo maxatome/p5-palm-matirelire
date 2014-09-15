@@ -184,9 +184,10 @@ sub new
 {
     my $classname   = shift;
     my $self        = $classname->SUPER::new(@_);
+
     # Create a generic PDB. No need to rebless it,
     # though.
-    
+
     $self->{name} = "MaTi=Default"; # Default name
     $self->{type} = "Acnt";
 
@@ -269,7 +270,6 @@ sub PackAppInfoBlock
     }
     $appinfo->{other} .=
 	$APPINFO_BLOCK_END->pack_block($appinfo);
-    
 
     # Pack the AppInfo block (and then append $appinfo->{other})
     $pack = &Palm::StdAppInfo::pack_StdAppInfo($appinfo);
@@ -296,7 +296,7 @@ sub new_AccountProperties
     my $retval = $classname->SUPER::new_Record(@_);
 
     $ACCOUNT_BLOCK->init_block($retval);
-    
+
     return $retval;
 }
 
@@ -328,13 +328,13 @@ sub findAccountPropertiesByIndex ($$)
     foreach my $rec (@{$self->{records}})
     {
 	# Account properties
-	if ($rec->{date_day} == 0 and $rec->{date_month} == 0 
+	if ($rec->{date_day} == 0 and $rec->{date_month} == 0
 	    and $rec->{date_year} == 0 and $rec->{category} == $account_idx)
 	{
 	    return $rec;
 	}
     }
-    
+
     return undef;
 }
 
@@ -708,7 +708,7 @@ sub validRecords ($;$)
 	}
 
 	# Account properties
-	if ($rec->{date_day} == 0 and $rec->{date_month} == 0 
+	if ($rec->{date_day} == 0 and $rec->{date_month} == 0
 	    and $rec->{date_year} == 0)
 	{
 	    # Nothing to do here...
@@ -718,7 +718,7 @@ sub validRecords ($;$)
 	    # Repeat
 	    if ($rec->{repeat})
 	    {
-		if ($rec->{repeat}{repeat_freq} == 0 
+		if ($rec->{repeat}{repeat_freq} == 0
 		    or $rec->{repeat}{repeat_type} > 2)
 		{
 		    push(@err_msg, "deleted repeat option");
@@ -804,7 +804,7 @@ sub validRecords ($;$)
 	    {
 		if ($verbose)
 		{
-		    print $verbose 
+		    print $verbose
 			("Record #$index (account=$rec->{category}) ",
 			 "UniqueID $rec->{id}\n",
 			 "$rec->{date_year}/$rec->{date_month}/$rec->{date_day} ",

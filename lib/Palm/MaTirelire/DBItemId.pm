@@ -71,7 +71,7 @@ sub new_RecordWithAutoId ($)
     my $id_field = $self->meta_infos->{id_field};
 
     $rec->{$id_field} = $self->get_first_free_id;
-    
+
     return defined($rec->{$id_field}) ? $rec : undef;
 }
 
@@ -88,7 +88,7 @@ sub new_RecordWithId ($$)
     my $rec = $self->new_Record;
 
     $rec->{$id_field} = $id;
-    
+
     return defined($rec->{$id_field}) ? $rec : undef;
 }
 

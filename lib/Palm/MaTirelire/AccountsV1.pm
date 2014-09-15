@@ -28,9 +28,9 @@ use constant UNKNOWN_TYPE	=> ((1 << 6) - 1);
 my $TRANS_BLOCK = Palm::BlockPack->new
     ('DateType'	=> [ 'date_' => 'now' ],
      'TimeType'	=> [ 'time_' => 'now' ],
-   
+
      '-N'	=> [ 'amount' => 0 ],
-   
+
      UInt32	=> [
 		    [ 'checked:1'	=> 0 ],
 		    'repeat:1',
@@ -124,7 +124,7 @@ sub new_Record
 
     $TRANS_BLOCK->init_block($retval);
     $TRANS_DESCRIPTION_BLOCK->init_block($retval);
-    
+
     return $retval;
 }
 
@@ -315,7 +315,7 @@ sub validRecords ($;$)
 	# Repeat
 	if ($rec->{repeat})
 	{
-	    if ($rec->{repeat}{repeat_freq} == 0 
+	    if ($rec->{repeat}{repeat_freq} == 0
 		or $rec->{repeat}{repeat_type} > 2
 		or $rec->{repeat}{reserved} != 0)
 	    {
@@ -370,7 +370,7 @@ sub validRecords ($;$)
 	{
 	    if ($verbose)
 	    {
-		print $verbose 
+		print $verbose
 		    ("Record #$index (account=$rec->{category}) "
 		     . "UniqueID $rec->{id}\n"
 		     . "$rec->{date_year}/$rec->{date_month}/$rec->{date_day} "

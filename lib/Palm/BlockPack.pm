@@ -226,7 +226,7 @@ sub init_block_element ($$$;$)
 	{
 	    delete $ref_hash->{$value};
 	}
-    }    
+    }
 }
 
 
@@ -461,8 +461,8 @@ sub unpack_block ($$;$$)
 		my $neg = 0;
 		if (substr($pack_type, 0, 1) eq '-')
 		{
-		   substr($pack_type, 0, 1) = ''; 
-		   substr($pack_one, 0, 1) = ''; 
+		   substr($pack_type, 0, 1) = '';
+		   substr($pack_one, 0, 1) = '';
 		   $neg = 1;
 		}
 
@@ -495,7 +495,7 @@ sub unpack_block ($$;$$)
 		else
 		{
 		    $ref_hash->{$field_name}
-		      = [ unpack($pack_type, 
+		      = [ unpack($pack_type,
 				 substr($$ref_pack, 0, $size * $num, '')) ];
 
 		    # 16 bits or 32 bits value is signed...
@@ -556,8 +556,8 @@ sub unpack_block ($$;$$)
 		{
 		    if (defined $size)
 		    {
-			$ref_hash->{$field_name} 
-			= unpack($type, substr($$ref_pack, 0, $size, ''));
+			$ref_hash->{$field_name}
+			    = unpack($type, substr($$ref_pack, 0, $size, ''));
 
 			# 16 bits or 32 bits value is signed...
 			__negate(\$ref_hash->{$field_name}, $size) if $neg;
@@ -567,7 +567,7 @@ sub unpack_block ($$;$$)
 		    {
 			$ref_hash->{$field_name} = unpack($type, $$ref_pack);
 
-			substr($$ref_pack, 0, 
+			substr($$ref_pack, 0,
 			       length($ref_hash->{$field_name}) + 1)
 			    = ''; # Longueur avec le \0
 		    }

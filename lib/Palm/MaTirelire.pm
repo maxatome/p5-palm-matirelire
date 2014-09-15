@@ -21,7 +21,7 @@ sub new
     my $self        = $classname->SUPER::new(@_);
     # Create a generic PDB. No need to rebless it,
     # though.
-    
+
     $self->{creator} = "MaT2";
     $self->{attributes}{resource} = 0;
                                 # The PDB is not a resource database by
@@ -30,16 +30,16 @@ sub new
     $self->{attributes}{Backup} = 1; # Always set the backup bit...
 
     # Have to define type and name in subclasses...
-    
+
     # Give the PDB a blank AppInfo block
     $self->{appinfo} = {};
-    
+
     # Give the PDB a blank sort block
     $self->{sort} = undef;
-    
+
     # Give the PDB an empty list of records
     $self->{records} = [];
-    
+
     return $self;
 }
 
