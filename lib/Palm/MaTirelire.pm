@@ -13,7 +13,7 @@ use Palm::Raw();
 
 use base qw(Palm::Raw);
 
-our $VERSION = '1.6';
+our $VERSION = '1.13';
 
 sub new
 {
